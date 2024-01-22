@@ -19,6 +19,7 @@ def read_sessions(filepath):
     return sessions
 
 
+# 读取训练集（train.txt）、测试集（test.txt）和项目数量（num_items.txt）
 def read_dataset(dataset_dir):
     train_sessions = read_sessions(dataset_dir / 'train.txt')
     test_sessions = read_sessions(dataset_dir / 'test.txt')
